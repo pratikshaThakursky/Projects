@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body{
+            background-color: black;
+
+        }
+        .row {
+            display: flex;
+        }
+
+        .box {
+            height: 85px;
+            width: 85px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 65px;
+
+        }
+
+        .white {
+            color: white;
+        }
+
+        .black {
+            color: black;
+        }
+
+
+        .type1 .box:nth-child(even) {
+            background-color: rgb(134, 89, 89);
+        }
+
+        .type1 .box:nth-child(odd) {
+            background-color: rgba(247, 209, 216, 0.995);
+        }
+
+        .type2 .box:nth-child(odd) {
+            background-color: rgb(134, 89, 89);
+        }
+
+        .type2 .box:nth-child(even) {
+            background-color: rgba(247, 209, 216, 0.995);
+        }
+
+        .me_didi_hu_tumhari {
+            margin-inline: auto;
+            width: fit-content;
+            border: 2px solid black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="me_didi_hu_tumhari">
+
+
+
+        <div class="row type1">
+            <div class="box"><i class="fa-solid fa-chess-bishop white"></i> </div>
+            <div class="box"><i class="fa-solid fa-chess-king black"></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-bishop white"></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-king white "></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn black"></i></div>
+            <div class="box"><i class="fa-solid fa-chess-knight white"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type1">
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn black"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type2">
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn black"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"><i class="fa-solid fa-chess-king white "></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-king black "></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-regular fa-chess-rook white"></i></div>
+        </div>
+        <div class="row type2">
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-king white "></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type1">
+            <div class="box"><i class="fa-solid fa-chess-pawn black"></i></div>
+            <div class="box"><i class="fa-solid fa-chess-knight white"></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"></div>
+            <div class="box"><i class="fa-solid fa-chess-pawn white"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row type2">
+            <div class="box"><i class="fa-solid fa-chess-queen white"></i></div>
+            <div class="box"><i class="fa-regular fa-chess-rook white"></i></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+
+</html>

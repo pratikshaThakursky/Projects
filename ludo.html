@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            background-color: lightseagreen;
+        }
+        table {
+            width: 680px;
+            height: 680px;
+            border: 2px solid black;
+            margin: 100px auto;
+            border-collapse: collapse;
+            background-color: white;
+
+        }
+        td{
+            color: white;
+        }
+
+        .red {
+            background-color: red;
+            color: red;
+        }
+
+        .green {
+            background-color: green;
+            color: green;
+        }
+
+        .blue {
+            background-color: blue;
+            color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: yellow;
+        }
+
+        .center {
+
+            width: 0;
+            border-bottom: 70px solid blue;
+            border-left: 70px solid red;
+            border-right: 70px solid yellow;
+            border-top: 70px solid green;
+            position: absolute;
+            left: 690px;
+            top: 370px;
+
+        }
+
+
+        .box {
+            height: 179px;
+            width: 179px;
+            border: 2px solid black;
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            left: 465px;
+            top: 145px;
+            background-color: white;
+
+
+        }
+
+        .red-box .gotiyan {
+            background-color: red;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0 0 4px 2px ; 
+        }
+
+        .green-box .gotiyan {
+            background-color: green;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0 0 4px 2px; 
+
+        }
+
+        .yellow-box .gotiyan {
+            background-color: yellow;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0 0 4px 2px ; 
+
+        }
+
+        .blue-box .gotiyan {
+            background-color: blue;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0 0 4px 2px ; 
+
+
+        }
+
+        .blue-box {
+            top: 552px;
+
+        }
+
+        .yellow-box {
+            top: 552px;
+            left: 872px;
+        }
+        .green-box{
+            left: 872px;
+        }
+        td i{
+            font-size: 15px;
+            padding-left: 10px;
+            color: black;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="center"></div>
+
+
+
+
+
+    <div class="red-box box">
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+    </div>
+
+
+    <div class="green-box box">
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+    </div>
+
+
+    <div class="yellow-box box">
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+    </div>
+
+
+    <div class="blue-box box">
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+        <div class="gotiyan"></div>
+    </div>
+    <div class="main">
+        <table border="2px solid black">
+            <tr>
+                <td class="red">1</td>
+                <td class="red">2</td>
+                <td class="red">3</td>
+                <td class="red">4</td>
+                <td class="red">5</td>
+                <td class="red">6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td class="green">10</td>
+                <td class="green">11</td>
+                <td class="green">12</td>
+                <td class="green">13</td>
+                <td class="green">14</td>
+                <td class="green">15</td>
+
+            </tr>
+            <tr>
+                <td class="red">16</td>
+                <td rowspan="2" colspan="2">17</td>
+
+                <td rowspan="2" colspan="2">19</td>
+                <td class="red">21</td>
+                <td>22</td>
+                <td class="hara green">23</td>
+                <td class="hara green"><i class="fa-solid fa-xmark"></i></td>
+                <td class="green">25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td class="green">30</td>
+            </tr>
+            <tr>
+                <td class="red">31</td>
+                <td class="red">36</td>
+                <td>37</td>
+                <td class="hara green">38</td>
+                <td>39</td>
+                <td class="green">40</td>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+                <td>44</td>
+                <td class="green">45</td>
+            </tr>
+            <tr>
+                <td class="red">46</td>
+                <td rowspan="2" colspan="2" style="border: none;">47</td>
+                <td rowspan="2" colspan="2">49</td>
+                <td class="red">51</td>
+                <td>52</td>
+                <td class="hara green">53</td>
+                <td>54</td>
+                <td class="green">55</td>
+                <td>56</td>
+                <td>57</td>
+                <td>58</td>
+                <td>59</td>
+                <td class="green">60</td>
+
+            </tr>
+            <tr>
+                <td class="red">61</td>
+                <td class="red">66</td>
+                <td>67</td>
+                <td class="hara green">68</td>
+                <td>69</td>
+                <td class="green">70</td>
+                <td>71</td>
+                <td>72</td>
+                <td>73</td>
+                <td>74</td>
+                <td class="green">75</td>
+
+            </tr>
+            <tr>
+                <td class="red">1</td>
+                <td class="red">2</td>
+                <td class="red">3</td>
+                <td class="red">4</td>
+                <td class="red">5</td>
+                <td class="red">6</td>
+                <td>7</td>
+                <td class="hara green">8</td>
+                <td>9</td>
+                <td class="green">10</td>
+                <td class="green">11</td>
+                <td class="green">12</td>
+                <td class="green">13</td>
+                <td class="green">14</td>
+                <td class="green">15</td>
+
+            </tr>
+            <tr>
+                <td>0</td>
+                <td class="lal red"><i class="fa-solid fa-xmark"></i></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td class="lal red">*</td>
+                <td class="lal red">*</td>
+                <td class="lal red">*</td>
+                <td class="lal red">*</td>
+                <td class="lal red">*</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+                <td class="pila yellow">*</td>
+                <td class="pila yellow">*</td>
+                <td class="pila yellow">*</td>
+                <td class="pila yellow">*</td>
+                <td class="pila yellow">*</td>
+                <td>*</td>
+
+
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td class="pila yellow"><i class="fa-solid fa-xmark"></i></td>
+                <td>+</td>
+
+            </tr>
+            <tr>
+                <td class="blue">61</td>
+                <td class="blue">62</td>
+                <td class="blue">63</td>
+                <td class="blue">64</td>
+                <td class="blue">65</td>
+                <td class="blue">66</td>
+                <td>67</td>
+                <td class="nila blue">68</td>
+                <td>69</td>
+                <td class="yellow">70</td>
+                <td class="yellow">71</td>
+                <td class="yellow">72</td>
+                <td class="yellow">74</td>
+                <td class="yellow">75</td>
+                <td class="yellow">76</td>
+
+            </tr>
+            <tr>
+                <td class="blue">77</td>
+                <td>78</td>
+                <td>79</td>
+                <td>80</td>
+                <td>81</td>
+                <td class="blue">82</td>
+                <td>83</td>
+                <td class="nila blue">84</td>
+                <td>85</td>
+                <td class="yellow">86</td>
+                <td>87</td>
+                <td>88</td>
+                <td>89</td>
+                <td>90</td>
+                <td class="yellow">91</td>
+            </tr>
+            <tr>
+                <td class="blue">92</td>
+                <td>93</td>
+                <td>94</td>
+                <td>95</td>
+                <td>96</td>
+                <td class="blue">97</td>
+                <td>98</td>
+                <td class="nila blue">99</td>
+                <td>100</td>
+                <td class="yellow">101</td>
+                <td>102</td>
+                <td>103</td>
+                <td>104</td>
+                <td>105</td>
+                <td class="yellow">106</td>
+            </tr>
+            <tr>
+                <td class="blue">107</td>
+                <td>108</td>
+                <td>109</td>
+                <td>110</td>
+                <td>111</td>
+                <td class="blue">112</td>
+                <td>113</td>
+                <td class="nila blue">114</td>
+                <td>115</td>
+                <td class="yellow">116</td>
+                <td>117</td>
+                <td>118</td>
+                <td>119</td>
+                <td>120</td>
+                <td class="yellow">121</td>
+
+            </tr>
+            <tr>
+                <td class="blue">122</td>
+                <td>122</td>
+                <td>123</td>
+                <td>124</td>
+                <td>125</td>
+                <td class="blue">126</td>
+                <td class="nila blue"><i class="fa-solid fa-xmark"></i></td>
+                <td class="nila blue">128</td>
+                <td>129</td>
+                <td class="yellow">130</td>
+                <td>131</td>
+                <td>132</td>
+                <td>133</td>
+                <td>134</td>
+                <td class="yellow">135</td>
+
+            </tr>
+            <tr>
+                <td class="blue">136</td>
+                <td class="blue">137</td>
+                <td class="blue">138</td>
+                <td class="blue">139</td>
+                <td class="blue">140</td>
+                <td class="blue">141</td>
+                <td>142</td>
+                <td>143</td>
+                <td>144</td>
+                <td class="yellow">145</td>
+                <td class="yellow">146</td>
+                <td class="yellow">147</td>
+                <td class="yellow">148</td>
+                <td class="yellow">149</td>
+                <td class="yellow">150</td>
+
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

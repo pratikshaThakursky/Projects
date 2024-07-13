@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 ;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        @keyframes myclock{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+               transform:rotate(360deg); 
+            }
+        }
+
+            
+        .clock{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-top: 100px;
+            /* margin-inline: auto; */
+            margin-left: calc(50% - 150px);
+            position: relative;
+            /* background-color: white; */
+            background-image: url(big-analog-clock.gif);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .second{
+            height: 6px;
+            width: 120px;
+            position:absolute;
+            background-color: blue;
+            /* margin-inline: auto; */
+            left: calc(50%);
+            top: calc(50% - 3px);
+            transform-origin: 0 3px ;
+            animation: myclock 60s linear infinite;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        
+        .minute{
+            height: 8px;
+            width: 100px;
+            position:absolute;
+            background-color:black;
+            left: calc(50%);
+            top: calc(50% - 4px);
+            transform-origin: 0 4px ;
+            animation: myclock 3600s linear infinite;
+            border-top-right-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
+        .hour{
+            height: 10px;
+            width: 70px;
+            background-color:yellowgreen;
+            position: absolute;
+            left: calc(50%);
+            top: calc(50% - 5px);
+            transform-origin: 0 5px;
+            animation: myclock 43200s linear infinite;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+        .dot{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(255, 47, 193);
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            border-radius:50%;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="second"></div>
+        <div class="minute"></div>
+        <div class="hour"></div>
+        <div class="dot"></div>
+    </div>
+
+</body>
+</html>

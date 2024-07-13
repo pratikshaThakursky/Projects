@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        :root{
+            --orange: orangered;
+            
+        }
+
+        .orange {
+            background-color: var(--orange);
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .laptop {
+            border: 20px solid rgb(61, 56, 56);
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            position: absolute;
+            background-color: white;
+            top: 50px;
+            left: 60px;
+        }
+
+        button{
+            background-color: black;
+            color: white;
+            width: 130px;
+            height: 40px;
+
+        }
+
+        h1,h4{
+            color: white;
+        }
+
+        h2,p{
+            margin-left: 100px;
+            margin-top: 25px;
+        }
+        /* for tablet device */
+
+        .tablet{
+            height: 500px;
+            width: 700px;
+            border: 40px solid rgb(61, 56, 56);
+            border-top:10px solid rgb(61, 56, 56);
+            border-bottom:15px solid rgb(61, 56, 56);
+            position: absolute;
+            overflow: hidden;
+            border-radius: 15px;
+            background-color: white;
+            top: 100px;
+            left: 500px;
+
+        }
+        .tablet h2,.tablet p{
+            margin-left: 15px;
+
+
+        }
+
+        .icons{
+            /* border: 2px solid red; */
+            position: absolute;
+            bottom: -3px;
+            right: 30px;
+        }
+        .icons i{
+            font-size: 50px;
+            color: var(--orange);
+
+        }
+        .icons i:nth-child(2){
+            font-size: 20px;
+            position: absolute;
+            top: -20px;
+            left: 9px;
+
+        }
+
+
+        .android{
+            border: 10px solid  rgb(61, 56, 56);
+            border-top:30px solid rgb(61, 56, 56);
+            border-bottom:30px solid rgb(61, 56, 56);
+            height: 510px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: absolute;
+            background-color: white;
+            top: 150px;
+            left: 1150px;
+
+            
+
+        }
+
+        .android h2,.android p{
+            margin-left: 10px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="laptop">
+        <div class="orange">
+            <h1>START PAGE</h1>
+            <H4 style="margin-top: 30px;">let's go to the page</H4>
+            <button style="margin-top: 25px;">get started</button>
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, dolore dicta fugit officia explicabo, sit exercitationem nobis, laudantium eligendi dolores quia officiis! Consequatur consectetur ea dolore odit necessitatibus voluptates quia.</p>
+    </div>
+
+
+
+
+
+    <div class="tablet">
+        <div class="orange">
+            <h1>START PAGE</h1>
+            <H4 style="margin-top: 30px;">let's go to the page</H4>
+            <button style="margin-top: 25px;">get started</button>
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p style="width: 80%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, dolore dicta fugit officia explicabo, sit exercitationem nobis, laudantium eligendi dolores quia officiis! Consequatur consectetur ea dolore odit necessitatibus voluptates quia.</p>
+        <div class="icons" >
+       <i class="fa-solid fa-cross"></i>
+       <i class="fa-regular fa-circle"></i>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="android">
+        <div class="orange">
+            <h1>START PAGE</h1>
+            <H4 style="margin-top: 30px;">let's go to the page</H4>
+            <button style="margin-top: 25px;">get started</button>
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, dolore dicta fugit officia explicabo, sit exercitationem nobis, laudantium eligendi dolores quia officiis! Consequatur consectetur ea dolore odit necessitatibus voluptates quia.</p>
+    </div>
+
+
+    
+
+
+
+</body>
+
+</html>

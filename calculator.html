@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .calculator{
+            border: 2px solid aqua;
+            height: 400px;
+            width: 300px;
+            overflow: hidden;
+
+           
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white ;
+        }
+
+
+        .btn{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .num19{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        input{
+            height: 50px;
+            width: 100%;
+            background-color: darkcyan;
+            margin-bottom: 5px;
+            color: greenyellow;
+            font-size: 22px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator" >
+        <input type="text">
+        <div class="num19">
+            <div class="btn" style="background-color: gray;"onclick=allClear)>c</div>
+            <div class="btn" style="background-color: gray;">cut</div>
+            <div class="btn" style="background-color: gray;" onclick=addValue(this.innerText)>%</div>
+            <div class="btn" style="background-color: orangered;" onclick=addValue(this.innerText)>/</div>
+            <div class="btn" onclick=addValue(7)>7</div>
+            <div class="btn" onclick=addValue(8)>8</div>
+            <div class="btn" onclick=addValue(9)>9</div>
+            <div class="btn" style="background-color: orangered;" onclick=addValue(this.innerText)>x</div>
+            <div class="btn" onclick=addValue(4)>4</div>
+            <div class="btn" onclick=addValue(5)>5</div>
+            <div class="btn" onclick=addValue(6)>6</div>
+            <div class="btn" style="background-color: orangered;" onclick=addValue(this.innerText)>-</div>
+            <div class="btn " onclick=addValue(1)>1</div>
+            <div class="btn" onclick=addValue(2)>2</div>
+            <div class="btn" onclick=addValue(3)>3</div>
+            <div class="btn" style="background-color: orangered;" onclick=addValue(this.innerText)>+</div>
+            <div class="btn" onclick=addValue(0) style="width: 120px; border-radius: 30px;">0</div>
+            <div class="btn" style="background-color: orangered;" onclick=addValue(this.innerText)>.</div>
+            <div class="btn" style="background-color: orangered;" onclick=result()>=</div>
+        </div>
+    </div>
+    <script>
+
+        let input = document.querySelector("input")
+        
+        function addValue(num){
+            input.value = input.value+num;
+        }
+
+        // Simple calling....
+        // addValue(9)
+        // addValue(10)
+        // addValue(11)
+        // console.log(inputBox)
+
+        function result(){
+            let data =  eval(input.value);
+            input.value = data;
+        }
+
+
+       function allClear(){
+        input.value = ''
+        
+       }
+
+       let name = "rohan";
+       name = ''
+       console.log(name)
+
+    </script>
+</body>
+</html>
